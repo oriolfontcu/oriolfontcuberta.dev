@@ -1,10 +1,11 @@
 import { Header } from "./components/Header";
-
+import { Work } from "./components/Work";
 
 export default function Home() {
   return (
-      <div className="h-full bg-background">
+      <div className="bg-background my-40">
         <Header />
+        <Work />
       </div>
   );
 }
