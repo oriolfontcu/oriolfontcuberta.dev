@@ -17,11 +17,6 @@ export const DATA = {
           url: "https://linkedin.com/in/oriolfontcuberta",
           icon: Icons.linkedin,
         },
-        X: {
-          name: "X",
-          url: "https://x.com/oriolfontcu",
-          icon: Icons.x,
-        },
       },
     },
     projects: [
@@ -61,7 +56,7 @@ export const DATA = {
         title: "llm.report",
         href: "https://llm.report",
         description:
-          "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+          "Designed, developed and sold animated UI components for developers.",
         technologies: [
           "Next.js",
           "Typescript",
@@ -90,6 +85,16 @@ export const DATA = {
           "Stripe",
           "Cloudflare Workers",
         ],
+      },
+    ],
+    experienceData: [
+      {
+        startDate: "Mar 2023",
+        endDate: "Jun 2023",
+        role: "IT Intern",
+        company: "Atlas Language School | Dublin, Ireland",
+        companyUrl: "https://atlaslanguageschool.com/",
+        aboutRole: "Participated in an Erasmus internship program as part of my Technician in microcomputer systems and networks degree.",
       },
     ],
   };

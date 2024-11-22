@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
   	extend: {
   		fontFamily: {
-  			inter: ['Inter', 'sans-serif']
+  			inter: ['Inter', 'sans-serif'],
+			geist: ['Geist', 'sans-serif'],
   		},
   		colors: {
   			background: 'hsl(var(--background))',
