@@ -4,6 +4,7 @@ import { Work } from "./components/Work";
 import { Experience } from "./components/Experience";
 
 import BlurFade from "@/components/ui/blur-fade";
+import { Technologies } from "./components/Technologies";
 
 export default function Home() {
   return (
@@ -12,9 +13,12 @@ export default function Home() {
           <Header /> 
         </BlurFade>
         <BlurFade className="flex flex-col items-center">
+          <Technologies />
+        </BlurFade>
+        <BlurFade className="flex flex-col items-center">
           <Work />
         </BlurFade>
-        <BlurFade>
+        <BlurFade className="flex flex-col items-center md:items-start sm:items-start">
           <Experience />
         </BlurFade>
         <Footer />

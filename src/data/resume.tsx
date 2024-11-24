@@ -3,7 +3,7 @@ import { HomeIcon } from "lucide-react";
 
 export const DATA = {
     navbar: [
-      { href: "#", icon: HomeIcon, label: "Home" },
+      { href: "/", icon: HomeIcon, label: "Home"},
     ],
     contact: {
       social: {
@@ -17,8 +17,39 @@ export const DATA = {
           url: "https://linkedin.com/in/oriolfontcuberta",
           icon: Icons.linkedin,
         },
+        CV: {
+          name: "CV",
+          url: "/CV_FontcubertaAduart_Oriol.pdf",
+          icon: Icons.CV,
+        }
       },
     },
+    technologies: [
+      {
+        name: "TypeScript",
+        icon: Icons.TypeScript,
+      },
+      {
+        name: "ReactJS",
+        icon: Icons.ReactJS,
+      },
+      {
+        name: "NextJS",
+        icon: Icons.NextJS,
+      },
+      {
+        name: "NodeJS",
+        icon: Icons.NodeJS,
+      },
+      {
+        name: "PHP",
+        icon: Icons.PHP,
+      },
+      {
+        name: "MySQL",
+        icon: Icons.MySQL,
+      },
+    ],
     projects: [
       {
         title: "Chat Collect",

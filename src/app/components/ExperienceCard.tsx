@@ -46,7 +46,7 @@ export function ExperienceCard({ experienceData }: ExperienceSectionProps) {
                   href={experience.companyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex w-max items-center text-sm text-neutral-600 transition-colors duration-150 hover:text-black dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white"
+                  className="group flex w-max items-center text-sm text-neutral-600 transition-colors duration-150 hover:text-black dark:border-neutral-800 dark:text-neutral-400 dark:hover:text-white decoration-neutral-500 decoration-dotted underline-offset-[5px] hover:underline"
                 >
                   <span>{experience.company}</span>
                   <ArrowUpRight
