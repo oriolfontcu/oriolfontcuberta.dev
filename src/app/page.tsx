@@ -8,7 +8,7 @@ import { Technologies } from "./components/Technologies";
 
 export default function Home() {
   return (
-      <div className="mt-40 mb-20 flex flex-col justify-center items-center gap-20">
+      <div className="mt-40 mb-20 flex flex-col justify-center items-center gap-28">
         <BlurFade>
           <Header /> 
         </BlurFade>
