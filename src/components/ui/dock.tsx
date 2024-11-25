@@ -2,7 +2,13 @@
 
 import React, { PropsWithChildren, useRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { motion, useMotionValue, useSpring, useTransform, MotionValue } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  useTransform,
+  MotionValue,
+} from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
@@ -80,7 +86,6 @@ export interface DockIconProps {
 }
 
 const DockIcon = ({
-  size,
   magnification = DEFAULT_MAGNIFICATION,
   distance = DEFAULT_DISTANCE,
   mouseX,
@@ -90,30 +95,23 @@ const DockIcon = ({
 }: DockIconProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  let distanceCalc;
-  let widthSync;
-  let width;
-  if (mouseX !== undefined) {
-    distanceCalc = useTransform(mouseX, (val: number) => {
-      const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-  
-      return val - bounds.x - bounds.width / 2;
-    });
-  
-    widthSync = useTransform(
-      distanceCalc,
-      [-distance, 0, distance],
-      [40, magnification, 40],
-    );
-  
-    
-    width = useSpring(widthSync, {
-      mass: 0.1,
-      stiffness: 150,
-      damping: 12,
-    });
-  }
-  
+  // Los hooks ahora se llaman incondicionalmente
+  const distanceCalc = useTransform(mouseX || new MotionValue(), (val: number) => {
+    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+    return val - bounds.x - bounds.width / 2;
+  });
+
+  const widthSync = useTransform(
+    distanceCalc,
+    [-distance, 0, distance],
+    [40, magnification, 40],
+  );
+
+  const width = useSpring(widthSync, {
+    mass: 0.1,
+    stiffness: 150,
+    damping: 12,
+  });
 
   return (
     <motion.div
