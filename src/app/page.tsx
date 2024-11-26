@@ -18,7 +18,7 @@ export default function Home() {
         <BlurFade className="flex flex-col items-center">
           <Work />
         </BlurFade>
-        <BlurFade className="flex flex-col items-center md:items-start sm:items-start">
+        <BlurFade className="flex flex-col items-center lg:items-start">
           <Experience />
         </BlurFade>
         <Footer />

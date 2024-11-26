@@ -51,7 +51,7 @@ export function ExperienceCard({ experienceData }: ExperienceSectionProps) {
                   <span>{experience.company}</span>
                   <ArrowUpRight
                     className="ml-1 duration-150 group-hover:translate-x-[1.5px]"
-                    size={12}
+                    size={14}
                     strokeWidth={1.5}
                   />
                 </a>

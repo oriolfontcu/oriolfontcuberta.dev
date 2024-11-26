@@ -15,7 +15,7 @@ export function Header() {
     return (
 
         <div className="flex items-center justify-center flex-col">
-            <h1 className="text-primary font-inter font-bold text-4xl sm:text-7xl">
+            <h1 className="text-primary text-center font-inter font-bold text-5xl sm:text-7xl">
                 Oriol Fontcuberta <br /> 
                {title} Developer.
             </h1>
