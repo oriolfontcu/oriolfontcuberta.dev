@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./providers";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "I'm Oriol Fontcuberta Aduart",
@@ -25,6 +26,7 @@ export default function RootLayout({
             <div>
               {children}
               <Navbar />
+              <Analytics />
             </div>
             </ThemeProvider>
           </body>
