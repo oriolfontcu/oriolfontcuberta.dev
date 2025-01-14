@@ -17,11 +17,11 @@ export const DATA = {
           url: "https://linkedin.com/in/oriolfontcuberta",
           icon: Icons.linkedin,
         },
-        CV: {
-          name: "CV",
-          url: "/CV_FontcubertaAduart_Oriol.pdf",
-          icon: Icons.CV,
-        }
+        // CV: {
+        //   name: "CV",
+        //   url: "/CV_FontcubertaAduart_Oriol.pdf",
+        //   icon: Icons.CV,
+        // }
       },
     },
     technologies: [
