@@ -81,6 +81,14 @@ export const DATA = {
     ],
     experienceData: [
       {
+        startDate: "Mar 2025",
+        endDate: "Jun 2025",
+        role: "Software Developer Intern",
+        company: "La Salle University | Barcelona, Spain",
+        companyUrl: "https://salleurl.edu/",
+        aboutRole: "Contributing to the development of scalable web applications with a focus on frontend development. ",
+      },
+      {
         startDate: "Mar 2023",
         endDate: "Jun 2023",
         role: "IT Intern",
